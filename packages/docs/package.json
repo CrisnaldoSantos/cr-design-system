@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "start-storybook -p 6006",
-    "build": "build-storybook"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
@@ -25,10 +25,9 @@
     "vite": "^3.1.8"
   },
   "dependencies": {
-    "@cr-ui/eslint-config": "*",
-    "@cr-ui/tokens": "*",
-    "@cr-ui/react": "*",
-    "@cr-ui/ts-config": "*",
+    "@cr-ui/react":"*",
+    "@cr-ui/tokens":"*",
+    "@cr-ui/eslint-config":"*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
