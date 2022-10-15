@@ -1,0 +1,22 @@
+{
+  "name": "@cr-ui/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "./dist/indeex.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cr-ui/ts-config":"*",
+    "@cr-ui/eslint-config":"*",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.4"
+  }
+}
