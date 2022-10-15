@@ -44,12 +44,12 @@ var require_dist = __commonJS({
     var src_exports = {};
     __export(src_exports, {
       colors: () => colors2,
-      fontSizes: () => fontSizes,
-      fontWeights: () => fontWeights,
-      fonts: () => fonts,
-      lineHeights: () => lineHeights,
-      radii: () => radii,
-      space: () => space
+      fontSizes: () => fontSizes2,
+      fontWeights: () => fontWeights2,
+      fonts: () => fonts2,
+      lineHeights: () => lineHeights2,
+      radii: () => radii2,
+      space: () => space2
     });
     module.exports = __toCommonJS(src_exports);
     var colors2 = {
@@ -68,7 +68,7 @@ var require_dist = __commonJS({
       ignite700: "#015F43",
       ignite900: "#00291D"
     };
-    var fontSizes = {
+    var fontSizes2 = {
       xxs: "0.625rem",
       xs: "0.75rem",
       sm: "0.875rem",
@@ -83,22 +83,22 @@ var require_dist = __commonJS({
       "8xl": "4.5rem",
       "9xl": "6rem"
     };
-    var fontWeights = {
+    var fontWeights2 = {
       regular: "400",
       medium: "500",
       bold: "700"
     };
-    var fonts = {
+    var fonts2 = {
       default: "Roboto, sans-serif",
       code: "monospace"
     };
-    var lineHeights = {
+    var lineHeights2 = {
       shorter: "125%",
       short: "140%",
       base: "160%",
       tall: "180%"
     };
-    var radii = {
+    var radii2 = {
       px: "1px",
       xs: "4px",
       sm: "6px",
@@ -106,7 +106,7 @@ var require_dist = __commonJS({
       lg: "16px",
       full: "99999px"
     };
-    var space = {
+    var space2 = {
       1: "0.25rem",
       2: "0.5rem",
       3: "0.75rem",
@@ -126,6 +126,41 @@ var require_dist = __commonJS({
   }
 });
 
-// src/index.ts
+// src/styles/index.ts
 var import_tokens = __toESM(require_dist());
-console.log(import_tokens.colors);
+import { createStitches, defaultThemeMap } from "@stitches/react";
+var {
+  styled,
+  css,
+  globalCss,
+  keyframes,
+  getCssText,
+  theme,
+  createTheme,
+  config
+} = createStitches({
+  themeMap: {
+    ...defaultThemeMap,
+    height: "space",
+    width: "space"
+  },
+  theme: {
+    colors: import_tokens.colors,
+    fonts: import_tokens.fonts,
+    fontSizes: import_tokens.fontSizes,
+    fontWeights: import_tokens.fontWeights,
+    lineHeights: import_tokens.lineHeights,
+    radii: import_tokens.radii,
+    space: import_tokens.space
+  }
+});
+
+// src/index.tsx
+var Button = styled("button", {
+  fontFamily: "$default",
+  backgroundColor: "$ignite500",
+  borderRadius: "$md"
+});
+export {
+  Button
+};
