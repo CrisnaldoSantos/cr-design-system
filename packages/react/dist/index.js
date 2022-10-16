@@ -172,7 +172,9 @@ var {
 var Button = styled("button", {
   fontFamily: "$default",
   backgroundColor: "$ignite500",
-  borderRadius: "$md"
+  borderRadius: "$md",
+  padding: "$4",
+  border: 0
 });
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

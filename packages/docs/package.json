@@ -25,9 +25,11 @@
     "vite": "^3.1.8"
   },
   "dependencies": {
-    "@cr-ui/react":"*",
-    "@cr-ui/tokens":"*",
-    "@cr-ui/eslint-config":"*",
+    "@cr-ui/eslint-config": "*",
+    "@cr-ui/react": "*",
+    "@cr-ui/tokens": "*",
+    "@cr-ui/ts-config": "*",
+    "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

@@ -159,7 +159,9 @@ var {
 var Button = styled("button", {
   fontFamily: "$default",
   backgroundColor: "$ignite500",
-  borderRadius: "$md"
+  borderRadius: "$md",
+  padding: "$4",
+  border: 0
 });
 export {
   Button
