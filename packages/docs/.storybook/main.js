@@ -1,12 +1,13 @@
 module.exports = {
   "stories": [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+    "../src/pages/**/*.stories.mdx",
+    "../src/stories/**/*.stories.tsx"
   ],
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
+    "@storybook/addon-a11y"
   ],
   "framework": "@storybook/react",
   "core": {
@@ -14,5 +15,12 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true
+  },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/cr-design-system/'
+    }
+
+    return config
   }
 }
