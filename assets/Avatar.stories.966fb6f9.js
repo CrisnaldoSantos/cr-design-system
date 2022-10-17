@@ -1,0 +1,2 @@
+import{A as a}from"./index.b6b0d595.js";import"./index.dbe8eeed.js";import"./iframe.d72f92f9.js";import"./index.286bc41f.js";import"./jsx-runtime.37d2c504.js";const l={title:"Data display/Avatar",component:a,args:{src:"https://github.com/CrisnaldoSantos.png",alt:"Crisnaldo Carvalho"}},m={},n={args:{src:void 0}},p=["Primary","WithFallback"];export{m as Primary,n as WithFallback,p as __namedExportsOrder,l as default};
+//# sourceMappingURL=Avatar.stories.966fb6f9.js.map
